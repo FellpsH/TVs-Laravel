@@ -37,14 +37,17 @@
 <body class="antialiased">
     <div class="fundo">
         <div class="calculadora">
+            <h3>TVs</h3>
             <p>O valor total das TVs 32 polegadas é: ${{$total1}}</p>
             <p>O valor total das TVs 40 polegadas é: ${{$total2}}</p>
             <p>O valor total final de todas as TVs é: ${{$totalt}}</p>
             <hr>
+            <h3>Player</h3>
             <p>O valor total dos Player é: ${{$totalA}}</p>
             <p>O valor total dos Players Secundário é: ${{$totalS}}</p>
             <p>O valor total final de todos os Players é: ${{$totalP}}</p>
             <hr>
+            <h3>Total</h3>
             <p>Incestimento Inicial: ${{$valorI}}</p>
             <p>O valro do Plano é: ${{$totalM}}</p>
         </div>
