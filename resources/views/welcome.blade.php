@@ -52,3 +52,17 @@
 </body>
 
 </html>
+
+
+<!-- <div class="fundo">
+        <h2>Orsamento</h2>
+        <div class="calculadora">
+            <h2>Quantas tvs você ira precisar?</h2><br>
+            <p>Quantos televisores de 32 polegadas? (Valor por unidade: $500)
+                <input type="number" name="quant" required /><br>
+            </p>
+            <input type="submit" value="Calcular">
+            <br>
+            <p>O resultado é Erro</p>
+        </div>
+    <div> -->

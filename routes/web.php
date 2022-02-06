@@ -1,17 +1,19 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Symfony\Component\Console\Input\Input;
+use Illuminate\Http\Request;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
+
+// Erro
+
+// Route::get('/', function (Request $request) {
+//     $tv32 = 500;
+//     $quant = $request->input('quant');
+//     $resultado = $quant * $tv32;
+
+//     return view('welcome', ['resultado' => $resultado]);
+// });
 
 Route::get('/', function () {
 
@@ -23,8 +25,6 @@ Route::get('/', function () {
     $total2 = 4 * $tv40;
 
     $totalt = $total1 + $total2;
-
-
 
     $PA = 292.00;
     $PS = 249.00;
@@ -44,6 +44,19 @@ Route::get('/', function () {
 
     $valorI = $totalt + $totalP + $totalM + $mao;
 
+
+
+
+    // $resultado = 3;
+
+
+    // if (isset($_GET['quant'], $_GET['Calcular'])) {
+    //     $quant = $_GET['quant'];
+    //     echo 'aaaaaaaaaaaaaaa';
+    //     $resultado = $quant * $tv32;
+    // }
+
+
     return view(
         'welcome',
         [
@@ -58,7 +71,8 @@ Route::get('/', function () {
             'totalS' => $totalS,
             'totalP' => $totalP,
             'totalM' => $totalM,
-            'valorI' => $valorI
+            'valorI' => $valorI,
+            // 'resultado' => $resultado
         ]
     );
 });
